@@ -58,22 +58,19 @@ Before running this application, make sure you have:
 5. **View Results**: See your score and review correct answers
 
 ## 📁 Project Structure
-
-```
-javascript-quiz-app/
-├── index.html          # Main HTML file
-├── css/
-│   ├── style.css       # Main stylesheet
-│   └── responsive.css  # Mobile responsiveness
-├── js/
-│   ├── app.js          # Main application logic
-│   ├── questions.js    # Quiz questions data
-│   └── utils.js        # Utility functions
-├── assets/
-│   ├── images/         # Images and icons
-│   └── fonts/          # Custom fonts
-└── README.md           # Project documentation
-```
+├── app/
+│   └── page.tsx                   # Main application entry
+├── components/
+│   ├── quiz-app.tsx              # Main quiz component
+│   └── ui/                       # Reusable UI components
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── progress.tsx
+│       └── badge.tsx
+├── types/
+│   └── quiz.ts                   # TypeScript interfaces
+└── data/
+    └── questions.ts              # Quiz questions and answers
 
 ## 🎯 Quiz Categories
 
